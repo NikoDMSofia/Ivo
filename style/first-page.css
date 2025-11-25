@@ -89,6 +89,7 @@ a {
 }
 
 .explane {
+  margin: 2rem 0 5rem 0;
   font-family: "Montserrat", sans-serif;
   color: #4b4b4b;
   padding: 10px 10px 0 50px;
