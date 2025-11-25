@@ -26,7 +26,6 @@ a {
   display: flex;
   justify-content: left;
   align-items: center;
-  margin-bottom: 2rem;
   padding: 50px;
 
   h1 {
@@ -47,7 +46,7 @@ a {
     padding: 10px 10px 0 50px;
     font-weight: 500;
   }
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .day-section {
@@ -79,7 +78,7 @@ a {
     h1::before {
       content: "";
       position: absolute;
-      background-color: #0841fd;
+      background-color: #A9242B;
       left: 0;
       top: 10%;
       width: 2px;
