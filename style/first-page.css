@@ -23,6 +23,11 @@ a {
 .head-title {
   height: 60px;
   background-color: #101011;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding: 50px;
 
   h1 {
     text-align: center;
