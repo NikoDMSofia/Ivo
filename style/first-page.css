@@ -22,7 +22,7 @@ a {
 
 .head-title {
   height: 60px;
-  background-color: #101011;
+  background-color: #151824;
   display: flex;
   justify-content: left;
   align-items: center;
@@ -72,7 +72,7 @@ a {
       letter-spacing: 1px;
       padding: 15px 20px;
       border-radius: 10px;
-      background-color: #0e0e0e;
+      background-color: #151824;
       position: relative;
     }
     h1::before {
