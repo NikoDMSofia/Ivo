@@ -3,85 +3,108 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style/nav-bar.css" />
-    <link rel="stylesheet" href="style/first-page.css" />
-    <title>Програма - 1</title>
+    <title>DS-Training</title>
   </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      transition: ease-in-out;
+    }
+
+    body {
+      font-family: system-ui, sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    img {
+      width: 100%;
+    }
+
+    button {
+      width: 100dvw;
+      height: 100dvh;
+      background-color: rgb(0, 0, 0);
+      border: none;
+      overflow: hidden;
+      animation: pop-bg 3s ease forwards;
+    }
+    .text {
+      color: white;
+      font-size: 2em;
+      color: brown;
+      letter-spacing: 5px;
+      opacity: 0;
+      animation: pop-name 1.5s 1.3s forwards;
+    }
+    .left {
+      width: 120px;
+      transform: translateX(9px);
+      animation: welcome-left 1.5s ease-in;
+    }
+    .right {
+      width: 100px;
+      transform: translateX(-9px);
+      animation: welcome-right 1.5s ease-in;
+    }
+
+    @keyframes welcome-right {
+      from {
+        transform: translateX(1000px);
+      }
+    }
+    @keyframes welcome-left {
+      from {
+        transform: translateX(-1000px);
+      }
+    }
+
+    @keyframes pop-name {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes pop-bg {
+      0% {
+        background-color: rgb(66, 66, 66);
+      }
+      80% {
+        opacity: 1;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+  </style>
   <body>
-    <!-- nav-bar -->
-
-    <!-- <div class="loggoo">DS-Training</div> -->
-    <!-- head-title -->
-
-    <div class="head-title">
-      <h1>Програма - 1</h1>
-    </div>
-
-    <!-- data  -->
-    <div class="real-day-time">
-      <a style="color: #a9242b" href="index.html"><h1>ПРОГРАМА 1</h1></a>
-      <a style="color: #4b4b4b" href="програма2.html"><h1>ПРОГРАМА 2</h1></a>
-    </div>
-
-    <div class="day-section">
-      <div class="day-section-title">
-        <h1>Гърди</h1>
+    <button onclick="setTimeout(myFunction, 100);">
+      <img class="left" src="images/logo-animation/лого-ляво.png" alt="" />
+      <img class="right" src="images/logo-animation/лого-дясно.png" alt="" />
+      <div class="text">
+        PERSONAL <br />
+        TRAINER
       </div>
-      <a href="HTML/WARM-UP/warm-up-Mon.html">
-        <div class="day-section-main">
-          <h1>Ден 1</h1>
-        </div>
-      </a>
-    </div>
-
-    <div class="day-section">
-      <div class="day-section-title">
-        <h1>Гръб</h1>
-      </div>
-      <a href="#">
-        <div class="day-section-main">
-          <h1>Ден 2</h1>
-        </div>
-      </a>
-    </div>
-
-    <div class="day-section">
-      <div class="day-section-title">
-        <h1>Рамо</h1>
-      </div>
-      <a href="#">
-        <div class="day-section-main">
-          <h1>Ден 3</h1>
-        </div>
-      </a>
-    </div>
-
-    <div class="day-section">
-      <div class="day-section-title">
-        <h1>Крака</h1>
-      </div>
-      <a href="#">
-        <div class="day-section-main">
-          <h1>Ден 4</h1>
-        </div>
-      </a>
-    </div>
-
-    <div class="day-section">
-      <div class="day-section-title">
-        <h1>Ръце</h1>
-      </div>
-      <a href="#">
-        <div class="day-section-main">
-          <h1>Ден 5</h1>
-        </div>
-      </a>
-    </div>
-    <div class="explane">
-      <h1>Въведение</h1>
-      <br />
-      <p>Ако имаш интерес мога да напиша нащо тук или да махна тази част.</p>
-      <br />
-    </div>
+    </button>
   </body>
+
+  <script>
+    function myFunction() {
+      window.location.href =
+        "https://nikodmsofia.github.io/Ivo/HTML/MY-SCHEDULE/my-schedule-Mon.html";
+    }
+
+    window.addEventListener("DOMContentLoaded", () => {
+      setTimeout(() => {
+        window.location.href =
+          "https://nikodmsofia.github.io/Ivo/HTML/MY-SCHEDULE/my-schedule-Mon.html";
+      }, 2500);
+    });
+  </script>
 </html>
